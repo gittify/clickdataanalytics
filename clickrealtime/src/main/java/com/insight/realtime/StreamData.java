@@ -53,7 +53,7 @@ public static void main(String[] args) throws Exception {
     Map<String, Integer> topics = new HashMap<String, Integer>();
     topics.put("my-topic", 1);
     JavaPairDStream<String, String> input = KafkaUtils.createStream(jssc, zkQuorum, group, topics);
- //   input.print();
+    input.print();
     
     
     final String redisKey ="realtime";
@@ -70,7 +70,7 @@ public static void main(String[] args) throws Exception {
                 }
             }
             );          
-  //  data.print();
+    data.print();
  
    
     // start our streaming context and wait for it to "finish"
