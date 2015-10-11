@@ -20,8 +20,8 @@
 - Java
 
 ##### Directories
--clickproducer - Simulate stream of bookmarks as input to Kafka
--clickrealtime - Stream processing using Spark Stream and Redis
+- clickproducer - Simulate stream of bookmarks as input to Kafka
+- clickrealtime - Stream processing using Spark Stream and Redis
 - sparksql - batch processing using SparkSql and Cassandra
 
 ##### Cassandra table Schema
@@ -34,11 +34,13 @@ CREATE TABLE playground.recommender (
 
 
 ###### Usage
--Run Realtime Job:
-spark-submit --class com.insight.batch.SparkBookmark --master spark://ip-172-xx-xx-xxx:7077  /pathto/spark-batch-0.0.1-SNAPSHOT.jar
+- Run Realtime Job
 
--Run Collaborative filtering algorithm:
-spark-submit --class CollaborativeFiltering --master spark://ip-172-xx-xx-xxx:7077  /pathto/spark-batch-0.0.1-SNAPSHOT.jar
+	spark-submit --class com.insight.batch.SparkBookmark --master spark://ip-172-xx-xx-xxx:7077  /pathto/spark-batch-0.0.1-SNAPSHOT.jar
+
+- Run Collaborative filtering algorithm
+
+	spark-submit --class CollaborativeFiltering --master spark://ip-172-xx-xx-xxx:7077  /pathto/spark-batch-0.0.1-SNAPSHOT.jar
 
 
 
