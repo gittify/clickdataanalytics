@@ -33,7 +33,7 @@ CREATE TABLE playground.recommender (
 ) WITH CLUSTERING ORDER BY (url ASC)
 
 
-###### Usage
+##### Usage
 - Run Realtime Job
 
 	spark-submit --class com.insight.batch.SparkBookmark --master spark://ip-172-xx-xx-xxx:7077  /pathto/spark-batch-0.0.1-SNAPSHOT.jar
