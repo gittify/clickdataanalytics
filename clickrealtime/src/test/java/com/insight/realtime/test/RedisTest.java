@@ -55,8 +55,6 @@ jedis.zincrby(key, 1, "Python1");
 System.out.println("Score after zincrby:" + jedis.zscore(key, "Python1"));
 System.out.println(jedis.keys("*"));
 System.out.println(jedis.zrange("realtime",0,-1));
-System.out.println(jedis.zrangeByScore("realtime",-1,9));
-System.out.println("Score after zincrby:" + jedis.zscore("realtime", "[ h=12qUaeY,  u=http://www.hpc.ncep.noaa.gov/discussions/nfdscc2.html]"));
 
 }
  

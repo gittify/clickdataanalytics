@@ -2,7 +2,9 @@ package com.insight.realtime;
 
 import java.sql.Timestamp;
 import java.util.List;
-
+/*
+ * Class Bookmark is a mapping of the raw JSON data record
+ */
 public class Bookmark implements java.io.Serializable{
 	public String a; //userAgent;
     public String c; //countryCode;
